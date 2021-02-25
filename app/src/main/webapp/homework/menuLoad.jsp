@@ -19,7 +19,8 @@ $(function(){
 		$.ajax({
 			url:$(this).data("url")+".jsp",
 			success:function(result){
-				$("#result").append(result);
+				$("#result").html("");
+				$("#result").append("<h2>페이지 조회</h2>").append(result);
 			},
 			dataType:"html"
 		})
@@ -37,7 +38,7 @@ $(function(){
 	<li class="menu active" data-url="login">로그인</li>
 </ul>
 <div id="result">
-	<h2>페이지 조회</h2>
+	
 </div>
 </body>
 </html>

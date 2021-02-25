@@ -1,9 +1,12 @@
 <%@ page contentType="text/html; charset=utf-8" %>
 <html>
 <head>
-	<style>
-		
-	</style>
+<script type="text/javascript">
+	var n = localStorage.getItem("name");
+	if(n != null){
+		alert(n);
+	}
+</script>
 </head>
 <body>
 	<h2>Hello World!</h2>
